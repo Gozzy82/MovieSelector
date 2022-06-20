@@ -21,9 +21,9 @@
 }
 
 .movie_grid_square::before {
-    content:'';
+    content:attr(data-before);
 }
 
 .movie_grid_square::after {
-    content:'';
+    content:attr(data-after);
 }

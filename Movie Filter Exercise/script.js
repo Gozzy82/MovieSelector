@@ -32,6 +32,8 @@ let allPrincessMovies = allMovies.filter(
 let addMoviesToDom = function(array) {
     array.forEach(function (movie) {
         let movieToAdd = document.createElement("li");
+        movieToAdd.setAttribute('data-before', movie.title);
+        movieToAdd.setAttribute('data-after', movie.year);
         console.log(movieToAdd)
         let movieLink = document.createElement("a")
         let moviePoster = document.createElement("img");
