@@ -1,0 +1,29 @@
+.filter_menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#movie_grid {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(12, auto);
+    column-gap: 75px;
+    row-gap: 50px;
+}
+
+.movie_grid_square {
+    border: 5px solid black;
+    list-style-type: none;
+    height: 333px;
+    width: 225px;
+}
+
+.movie_grid_square::before {
+    content:'';
+}
+
+.movie_grid_square::after {
+    content:'';
+}

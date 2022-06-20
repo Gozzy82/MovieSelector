@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Alex' Superhero Movie Selector</title>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script defer type="text/javascript" src="movie_data.js"></script>
+        <script defer type="text/javascript" src="script.js"></script>
+      </head>
+
+<body>
+
+    <header></header>
+
+    <nav class = "filter_menu">
+        <input id = "all_btn" type = "radio" name="filter_btn" value="new_btn" checked="checked"> All Movies
+        <input id = "new_btn" type = "radio" name="filter_btn" value="new_btn"> New Releases
+        <input id = "avenger_btn" type = "radio" name="filter_btn" value="avenger_btn"> Avenger Movies
+        <input id = "xmen_btn" type = "radio" name="filter_btn" value="xmen_btn"> X-Men Movies
+        <input id = "batman_btn" type = "radio" name="filter_btn" value="batman_btn"> Batman Movies
+        <input id = "princess_btn" type = "radio" name="filter_btn" value="princess_btn"> Princess Movies
+    </nav>
+
+    <main class = "movie_display">
+        <ul id = "movie_grid"></ul>
+    </main>
+
+    <footer></footer>
+
+</body>
+</html>
